@@ -18,7 +18,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.gestorcontactos.controladores.ControladorInterfazUsuario">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="935.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.gestorcontactos.controladores.ControladorInterfazUsuario">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="61.0" prefWidth="899.0" style="-fx-background-color: #18C0E1;">
          <children>
@@ -41,11 +41,11 @@
             <Insets top="10.0" />
          </padding>
       </VBox>
-      <HBox prefWidth="920.0" style="-fx-background-color: #D4FFF9;">
+      <HBox prefHeight="553.0" prefWidth="935.0" style="-fx-background-color: #D4FFF9;">
          <children>
-            <VBox prefHeight="474.0" prefWidth="387.0" style="-fx-background-color: 21B5D2;">
+            <VBox prefHeight="527.0" prefWidth="409.0" style="-fx-background-color: 21B5D2;">
                <children>
-                  <GridPane alignment="CENTER" hgap="10" prefWidth="342.0" style="-fx-background-color: #92E1F0;" vgap="10">
+                  <GridPane alignment="CENTER" hgap="10" prefHeight="266.0" prefWidth="401.0" style="-fx-background-color: #92E1F0;" vgap="10">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.79999389648438" minWidth="10.0" prefWidth="111.79999237060548" />
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="251.2000076293945" minWidth="10.0" prefWidth="251.2000076293945" />
@@ -88,11 +88,14 @@
                         <TextField fx:id="txtEmail" GridPane.columnIndex="1" GridPane.rowIndex="4" />
 
                          <!-- HBox para organizar el botón y el ImageView en la misma celda -->
-                         <HBox alignment="CENTER_LEFT" spacing="10" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                         <HBox alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="5">
                              <Button fx:id="btnSeleccionarImagen" mnemonicParsing="false" onAction="#seleccionarImagen" style="-fx-background-color: #60B4DB;" text="Elegir Foto">
                                  <font>
                                      <Font name="Century Gothic" size="14.0" />
                                  </font>
+                              <HBox.margin>
+                                 <Insets right="10.0" />
+                              </HBox.margin>
                              </Button>
                              <ImageView fx:id="imageView" fitWidth="150" preserveRatio="true" />
                          </HBox>
@@ -109,7 +112,7 @@
                         <RowConstraints />
                      </rowConstraints>
                   </GridPane>
-                  <HBox prefHeight="58.0" prefWidth="358.0">
+                  <HBox alignment="TOP_CENTER" prefHeight="58.0" prefWidth="358.0">
                      <children>
                         <Button mnemonicParsing="false" onAction="#crearContacto" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #60B4DB;" text="Crear ">
                            <HBox.margin>
@@ -213,8 +216,11 @@
                   </VBox>
                </children>
                <padding>
-                  <Insets left="10.0" />
+                  <Insets left="25.0" />
                </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </VBox>
          </children>
          <VBox.margin>

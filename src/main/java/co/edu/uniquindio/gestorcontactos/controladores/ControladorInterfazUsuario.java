@@ -190,7 +190,7 @@ public class ControladorInterfazUsuario implements Initializable {
                 // Crear un VBox más grande y con color de fondo
                 VBox contenido = new VBox(15);
                 contenido.setAlignment(Pos.CENTER);
-                contenido.setPrefSize(600, 450); // Ajustar el tamaño del VBox
+                contenido.setPrefSize(400, 250); // Ajustar el tamaño del VBox
                 contenido.setPadding(new Insets(15)); // Agregar padding
                 contenido.setStyle("-fx-background-color:    #D4FFF9; -fx-border-radius: 10; -fx-background-radius: 10;"); // Color y bordes redondeados
 
